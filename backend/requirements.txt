@@ -1,0 +1,10 @@
+
+tensorflow==2.21.0
+tf-keras==2.21.0
+tensorflow-hub==0.16.1
+fastapi
+uvicorn[standard]
+python-multipart
+opencv-python-headless
+numpy
+setuptools<81
