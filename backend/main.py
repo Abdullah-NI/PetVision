@@ -15,11 +15,14 @@ app = FastAPI(title="Dog vs Cat Classifier API")
 # Allow requests from the frontend during local development
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173","https://pet-vision-dusky.vercel.app/"],
+    allow_origins=["http://localhost:5173","https://pet-vision-dusky.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+
 
 MODEL_PATH = os.path.join(
     os.path.dirname(__file__), "dog_cat_model.h5"
