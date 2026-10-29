@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import "./index.css";
 
 const API_URL =
-  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+  import.meta.env.VITE_API_URL || "https://petvision.onrender.com";
 
 function App() {
   const [file, setFile] = useState(null);
